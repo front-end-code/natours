@@ -11,3 +11,45 @@
     left: $left_num;
     transform: translate($num_1, $num_2);
 }
+
+// Mixins for media queries
+/*
+    0 - 600px:        Mobile phones
+    600px - 900px:    Tablet Portrate mode 
+    900px - 1200px:   Tablet Landscape mode
+    1200px - 1800px:  Desctop Mode
+    1800px + :        Big screens 
+*/
+
+
+// First approach \\
+
+
+// @mixin respond-phone {
+
+//     @media (max-width: 600px) { @content };
+
+// }
+
+
+/*
+- phone
+- portrait
+- landscape
+- big
+*/
+// Second approach \\
+@mixin respond ($breakepoint) {
+    @if $breakepoint == phone { 
+        @media (max-width: 37.5em) { @content }; // 600px
+    };
+    @if $breakepoint == portrait { 
+        @media (max-width: 56.25em) { @content };  // 900px
+    };
+    @if $breakepoint == landscape { 
+        @media (max-width: 75em) { @content }; // 1200px
+    };
+    @if $breakepoint == big { 
+        @media (min-width: 112.5em) { @content }; // 1800px
+    };
+}

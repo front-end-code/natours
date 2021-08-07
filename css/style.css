@@ -1,3 +1,16 @@
+/*
+    0 - 600px:        Mobile phones
+    600px - 900px:    Tablet Portrate mode 
+    900px - 1200px:   Tablet Landscape mode
+    1200px - 1800px:  Desctop Mode
+    1800px + :        Big screens 
+*/
+/*
+- phone
+- portrait
+- landscape
+- big
+*/
 *,
 *::after,
 *::before {
@@ -7,6 +20,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
