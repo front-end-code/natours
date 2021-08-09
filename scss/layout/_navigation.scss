@@ -13,6 +13,16 @@
         z-index: 120;
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
         cursor: pointer;
+
+        @include respond (portrait) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond (phone) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
     &__icon {
         @include position_center (50%, 50%, -50%, -50%);
@@ -51,6 +61,16 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 100;
         transition: transform .5s ease-in-out;
+
+        @include respond (portrait) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include respond (phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
     &__nav {
         opacity: 0;
