@@ -16,7 +16,7 @@
         visibility: visible;
     }
     &__content {
-        @include position_center (50%, 50%, -50%, -50%);
+        @include position_center (absolute, 50%, 50%, -50%, -50%);
         width: 75vw;
         background-color: $color-white;
         border-radius: 3px;

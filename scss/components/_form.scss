@@ -76,7 +76,7 @@
             height: 1.5rem;
             background-color: $color-primary;
             border-radius: 50%;
-            @include position_center (50%, 50%, -50%, -50%);
+            @include position_center (absolute, 50%, 50%, -50%, -50%);
             transition: opacity .2s;
         }
     }

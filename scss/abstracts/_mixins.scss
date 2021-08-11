@@ -5,8 +5,8 @@
         clear: both;
     }
 }
-@mixin position_center ($top_num, $left_num, $num_1, $num_2) {
-    position: absolute;
+@mixin position_center ($position, $top_num, $left_num, $num_1, $num_2) {
+    position: $position;
     top: $top_num;
     left: $left_num;
     transform: translate($num_1, $num_2);

@@ -25,7 +25,7 @@
         }
     }
     &__icon {
-        @include position_center (50%, 50%, -50%, -50%);
+        @include position_center (absolute, 50%, 50%, -50%, -50%);
 
         &,
         &::after,
@@ -83,7 +83,7 @@
         transition: all .5s;
     }
     &__list {
-        @include position_center(50%, 50%, -50%, -50%);
+        @include position_center(absolute, 50%, 50%, -50%, -50%);
         list-style: none;
         text-align: center;
         width: 100%;
