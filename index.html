@@ -364,10 +364,21 @@
 
         <footer class="footer">
             <section class="footer__logo-box">
-                <img src="./img/logo-green-2x.png" alt="must have text here" class="footer__logo">
-            </section>
-            <section class="row">
 
+                <picture class="footer__logo">
+                    <source 
+                        srcset="./img/logo-green-small-2x.png 2x, ./img/logo-green-small-1x.png 1x"
+                        media="(max-width: 37.5em)"
+                    >
+                    <img 
+                        srcset="./img/logo-green-2x.png 2x, ./img/logo-green-1x.png 1x" 
+                        alt="must have text here"
+                    >
+                </picture>
+                
+            </section>
+
+            <section class="row">
                 <section class="col-1-of-2">
                     <section class="footer__navigation">
                         <ul class="footer__list">
